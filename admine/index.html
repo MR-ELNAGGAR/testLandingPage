@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awsome css file -->
+    <link rel="stylesheet" href="style/all.min.css" />
+    <!-- normallize css file -->
+    <link rel="stylesheet" href="style/normallize.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style css file -->
+    <link rel="stylesheet" href="style/style.css" />
+    <title>ADMIN PAGE</title>
+  </head>
+  <body>
+    <h1 class="pageTitle">Admin page</h1>
+    <div class="container">
+      <form action="/" method="post" class="form">
+        <div class="branch">
+          <h2>القسم اللي المنتج هيظهر فية</h2>
+          <select name="section">
+            <option value="fristBranch">باب و شباك</option>
+            <option value="secondBranch">موبيليا</option>
+            <option value="thirdBranch">إكسسوارات نجارة</option>
+            <option value="fourthBranch">سباكة</option>
+          </select>
+        </div>
+
+        <div class="title">
+          <h2>إسم المنتج</h2>
+          <input name="name" type="text" placeholder="إسم المنتج" />
+        </div>
+
+        <div class="describtion">
+          <h2>وصف للمنتج</h2>
+          <textarea name="describtion" placeholder="وصف المنتج"></textarea>
+        </div>
+
+        <div class="price">
+          <h2>سعر المنتج</h2>
+          <input name="price" type="number" placeholder="سعر المنتج" />
+        </div>
+
+        <div class="imgs">
+          <h2>الصوره الأولي (الأساسية)</h2>
+          <input
+            name="img1"
+            type="text"
+            placeholder="الصورة الأولى (الأساسيه)"
+          />
+          <h2>الصوره الثانية</h2>
+          <input name="img2" type="text" placeholder="الصورة الثانية" />
+          <h2>الصوره الثالثة</h2>
+          <input name="img3" type="text" placeholder="الصوره الثالثة" />
+        </div>
+
+        <div class="add">
+          <input type="submit" value="إضافة" />
+        </div>
+      </form>
+    </div>
+    <h1 class="delTitle">حذف المنتجات</h1>
+    <div class="container">
+      <div class="products">
+        <table>
+          <tr>
+            <th>#</th>
+            <th>الإسم</th>
+            <th>القسم</th>
+            <th>الحدث</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>هذا الاسم للإختبار</td>
+            <td>باب و شباك</td>
+            <td>
+              <button><i class="fa-regular fa-trash-can"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>هذا الاسم للإختبار</td>
+            <td>إكسسوارات نجارة</td>
+            <td>
+              <button><i class="fa-regular fa-trash-can"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>هذا الاسم للإختبار</td>
+            <td>موبيليا</td>
+            <td>
+              <button><i class="fa-regular fa-trash-can"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>هذا الاسم للإختبار</td>
+            <td>سباكة</td>
+            <td>
+              <button><i class="fa-regular fa-trash-can"></i></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- js files -->
+    <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
