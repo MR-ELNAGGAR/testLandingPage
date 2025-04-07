@@ -110,7 +110,7 @@ header {
 }
 .card-text-content .card-title {
   font-size: 13px;
-  color: rgb(0, 0, 0);
+  color: #054c73;
   font-weight: 400;
   font-family: "Cairo", sans-serif;
 }
@@ -118,6 +118,7 @@ header {
   font-family: "Cairo", sans-serif;
   font-size: 13px;
   line-height: 22px;
+  color: #054c73;
 }
 .services {
   width: 100%;
